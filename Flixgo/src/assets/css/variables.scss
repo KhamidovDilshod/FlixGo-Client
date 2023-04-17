@@ -1,6 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Sono&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:ital,wght@0,500;1,400&family=Sono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto+Mono&family=Roboto:ital,wght@0,500;1,400&family=Sono&display=swap');
 
 $open-sans: 'Open Sans', sans-serif;
 $roboto: 'Roboto', sans-serif;
 $sono: 'Sono', sans-serif;
-$main-color: #50A1A8
+$main-color: #29fd53;
+$font-size: 18px;
+$linear-grad: linear-gradient(135deg, #855edd 0%, #63afd3 100%);
+
+$bg-main: #1E1F26;
+$bg-header: #001A27;
+
+$bg-color: #222327;
+$text-color: #fff;

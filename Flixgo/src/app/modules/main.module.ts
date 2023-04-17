@@ -5,6 +5,7 @@ import { MainRoutingModule } from './main-routing.module';
 import { MainComponent } from './main/main.component';
 import {HeaderComponent} from "./layout/header/header.component";
 import { ContentComponent } from './layout/content/content.component';
+import {SharedModule} from "./shared/shared.module";
 
 
 @NgModule({
@@ -13,9 +14,10 @@ import { ContentComponent } from './layout/content/content.component';
     HeaderComponent,
     ContentComponent
   ],
-  imports: [
-    CommonModule,
-    MainRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        MainRoutingModule,
+        SharedModule
+    ]
 })
 export class MainModule { }
