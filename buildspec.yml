@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    APP_NAME: "Flixgo-Client"
+    APP_NAME: "flixgo"
 phases:
   install:
     runtime-versions:
