@@ -15,7 +15,11 @@ phases:
       - ng build --configuration=production
   post_build:
     commands:
-      - echo build process finished, we should upload to S3 now
-      - cd dist/$APP_NAME
-      - ls -la
-      - aws s3 sync . s3://flixgo-bucket --delete
+      - aws s3 cp --recursive ./build s3://www.flixgo-bucket/
+      - aws cloudfront create-invalidation --distribution-id E1OBVPSM3SGNTP --path/\*
+
+
+#      - echo build process finished, we should upload to S3 now
+#      - cd dist/$APP_NAME
+#      - ls -la
+#      - aws s3 sync . s3://flixgo-bucket --delete
