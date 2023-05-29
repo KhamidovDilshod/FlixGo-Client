@@ -1,0 +1,40 @@
+.movie-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 10px;
+  overflow-y: auto;
+  height: 90vh;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ffffff;
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #6D5A92;
+    }
+  }
+}
+
+.movie-card {
+  flex: 0 0 calc(33.33% - 20px); /* Adjust the width as needed */
+  /* Styles for movie card */
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .movie-card {
+    flex: 0 0 calc(50% - 20px); /* Adjust the width as needed */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .movie-card {
+    flex: 0 0 calc(100% - 20px); /* Adjust the width as needed */
+  }
+}

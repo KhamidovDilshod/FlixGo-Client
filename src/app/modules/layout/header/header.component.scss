@@ -1,5 +1,5 @@
-@import "./src/assets/css/variables";
-@import "./src/assets/css/utils";
+@import "src/assets/css/variables";
+@import "src/assets/css/utils";
 
 body {
   min-height: 100vh;
@@ -19,6 +19,7 @@ header {
   background: $bg-main;
   padding: 28px 12%;
   transition: all .50s ease;
+  height: 80px;
 }
 
 .logo {

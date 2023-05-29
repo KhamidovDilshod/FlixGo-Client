@@ -1,0 +1,5 @@
+<div class="movie-grid">
+  <ng-container *ngFor="let movie of movies">
+    <app-card [url]="movie.url" [title]="movie.title"></app-card>
+  </ng-container>
+</div>

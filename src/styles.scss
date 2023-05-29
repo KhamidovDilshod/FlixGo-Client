@@ -1,4 +1,4 @@
-@import "./src/assets/css/variables";
+@import "src/assets/css/variables";
 
 * {
   padding: 0;
@@ -11,4 +11,5 @@
 
 body {
   background: $bg-main;
+  overflow: hidden!important;
 }
