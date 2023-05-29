@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {SignUpComponent} from "../sign-up/sign-up.component";
+import {NzModalService} from "ng-zorro-antd/modal";
 
 @Component({
   selector: 'app-content',
@@ -66,10 +68,17 @@ export class ContentComponent implements OnInit {
     },
   ]
 
-  constructor() {
+  constructor(private modalService: NzModalService) {
   }
 
   ngOnInit(): void {
+  }
+
+  signUpDialog(): void {
+    this.modalService.create({
+      nzTitle: 'Sign Up',
+      nzContent: SignUpComponent
+    })
   }
 
 }
